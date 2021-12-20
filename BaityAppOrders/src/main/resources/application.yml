@@ -1,0 +1,18 @@
+server:
+  port: 9095
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:8889/ProductDB?serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+  application:
+    name:  ORDER-SERVICE
+

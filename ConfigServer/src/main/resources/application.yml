@@ -1,0 +1,13 @@
+server:
+  port:
+    9099
+
+spring:
+  application:
+    name: CONFIG_SERVICE
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DevAmar1996/cnfig-server
+          clone-on-start: true
